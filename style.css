@@ -59,7 +59,19 @@ button { font: inherit; }
   letter-spacing: -.035em;
 }
 .welcome h1 em, .letter-header h2 em { color: #d7b9a4; font-weight: 400; }
-.welcome-note { color: rgba(250,239,230,.72); font: 1.08rem "Cormorant Garamond", serif; margin: 20px 0 34px; }
+.welcome-note { color: rgba(250,239,230,.72); font: 1.08rem "Cormorant Garamond", serif; margin: 20px 0 20px; }
+.together-counter {
+  width: fit-content; max-width: 100%; margin: 0 auto 28px; padding: 13px 24px 12px;
+  border: 1px solid rgba(212,185,142,.28); border-radius: 3px;
+  background: rgba(255,255,255,.045); box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+.counter-caption { display: block; color: #d4b98e; font-size: .56rem; font-weight: 600; letter-spacing: .24em; }
+.counter-values { display: flex; justify-content: center; align-items: baseline; gap: 13px; margin: 5px 0 2px; }
+.counter-values span { display: flex; align-items: baseline; gap: 4px; color: #f8eee6; }
+.counter-values strong { font: 500 1.65rem/.95 "Cormorant Garamond",serif; font-variant-numeric: tabular-nums; }
+.counter-values small { color: rgba(250,239,230,.72); font-size: .62rem; }
+.counter-values i { color: #c7a879; font-style: normal; }
+.counter-since { color: rgba(250,239,230,.48); font-size: .58rem; letter-spacing: .04em; }
 .envelope-button {
   display: block; width: min(390px, 82vw); margin: 0 auto; padding: 0;
   border: 0; background: none; cursor: pointer; -webkit-tap-highlight-color: transparent;
@@ -104,11 +116,11 @@ button { font: inherit; }
 .envelope-button.opened .letter-peek { transform: translateY(-48%); }
 .envelope-button.opened .wax-seal { opacity: 0; transform: translate(-50%,-50%) scale(.2) rotate(35deg); }
 .open-hint {
-  margin-top: 28px; padding: 12px 18px; color: #ead7c3; border: 0; background: transparent;
-  font-size: .72rem; letter-spacing: .13em; text-transform: uppercase; cursor: pointer;
+  margin-top: 13px; padding: 8px 14px; color: rgba(234,215,195,.78); border: 0;
+  background: transparent; font-size: .64rem; letter-spacing: .13em;
+  text-transform: uppercase; cursor: pointer; transition: color .2s ease;
 }
-.open-hint span { display: block; margin-top: 10px; color: #c7a879; font-size: 1.2rem; animation: bob 1.7s infinite; }
-@keyframes bob { 50% { transform: translateY(5px); } }
+.open-hint:hover { color: #d4b98e; }
 .welcome-bottom {
   position: absolute; bottom: 35px; color: rgba(241,220,200,.45);
   font-size: .58rem; letter-spacing: .25em;
@@ -166,7 +178,10 @@ button { font: inherit; }
   .welcome::before { inset: 13px; }
   .welcome::after { inset: 19px; }
   .welcome h1 { font-size: clamp(3.25rem, 16vw, 4.5rem); }
-  .welcome-note { font-size: 1rem; margin-bottom: 28px; }
+  .welcome-note { font-size: 1rem; margin-bottom: 16px; }
+  .together-counter { margin-bottom: 21px; padding: 11px 19px 10px; }
+  .counter-values { gap: 10px; }
+  .counter-values strong { font-size: 1.5rem; }
   .envelope-button { width: min(340px, 84vw); }
   .wax-seal { width: 48px; height: 48px; font-size: 1.2rem; }
   .open-hint { font-size: .62rem; letter-spacing: .1em; }

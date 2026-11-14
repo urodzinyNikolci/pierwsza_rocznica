@@ -24,6 +24,18 @@
         <h1>Nasza pierwsza<br><em>rocznica</em></h1>
         <p class="welcome-note">Jest coś, co chciałbym Ci dziś powiedzieć…</p>
 
+        <div class="together-counter" aria-live="off" aria-label="Czas, który jesteśmy razem">
+          <span class="counter-caption">RAZEM JUŻ</span>
+          <div class="counter-values" id="relationshipCounter">
+            <span><strong id="counterYears">—</strong><small>lat</small></span>
+            <i>·</i>
+            <span><strong id="counterMonths">—</strong><small>miesięcy</small></span>
+            <i>·</i>
+            <span><strong id="counterDays">—</strong><small>dni</small></span>
+          </div>
+          <span class="counter-since">od 15 listopada 2025</span>
+        </div>
+
         <button class="envelope-button" id="openLetter" type="button" aria-label="Otwórz kopertę i przeczytaj list">
           <span class="envelope" aria-hidden="true">
             <span class="envelope-back"></span>
@@ -33,7 +45,7 @@
             <span class="wax-seal">♥</span>
           </span>
         </button>
-        <button class="open-hint" id="openHint" type="button">Dotknij koperty, aby otworzyć <span>↓</span></button>
+        <button class="open-hint" id="openHint" type="button">Dotknij, aby otworzyć list</button>
       </div>
       <div class="welcome-bottom">NAPISANE Z MIŁOŚCIĄ <span>✦</span></div>
     </section>
@@ -108,6 +120,7 @@
 
         <footer class="letter-footer">
           <span class="footer-heart">♥</span>
+          <p>Na wszystkie nasze kolejne rozdziały.</p>
         </footer>
       </article>
       <button class="back-to-top" id="backToTop" type="button" aria-label="Wróć na górę">↑</button>
